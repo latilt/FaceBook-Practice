@@ -18,11 +18,10 @@ whatEvent.addEventListener("focusout", function() {
 
 whatEvent.addEventListener("input", function(evt) {
   if(evt.target.value.length >= 20) {
-    evt.target.insertAdjacentHTML("afterend", "<div>20글자 초과</div>");
-
-    setTimeout(function() {
-      evt.target.parentElement.removeChild(evt.target.nextElementSibling);
-    }, 3000)
+    evt.target.nextElementSibling.style.display = "block";
+  }
+  else {
+    evt.target.nextElementSibling.style.display = "none";
   }
 
 });
