@@ -94,11 +94,19 @@ section p {
 
 #cancel {
   margin : 7px;
-  display: none;
+  1display: none;
   border : 1px solid black;
   text-align : center;
 }
 
 #textOver {
+  display : none;
+}
+
+.block {
+  display : block;
+}
+
+.none {
   display : none;
 }
